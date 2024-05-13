@@ -1,0 +1,7 @@
+class BankCardDetail extends Model
+{
+    use HasFactory;
+    protected $table = "bankcarddetail";
+
+    protected $fillable = ['vendor_profile_id', 'vendor_id', 'card_holder_name', 'card_number', 'cvv','valid_date', 'card_type'];
+}

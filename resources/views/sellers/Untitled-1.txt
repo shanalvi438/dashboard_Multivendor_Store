@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h5 class="text-5 fw-400 m-3">Bank Account Details
+            </h5>
+            <hr>
+            <div class="px-3 mb-3">
+                <ul class="list-unstyled">
+                    <li class="fw-500">Account Type:</li>
+                    <li class="text-muted">Personal</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="fw-500">IBN:</li>
+                    <li class="text-muted">{{$value->iban_no}}</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="fw-500">Bank Name:</li>
+                    <li class="text-muted">{{$value->bank_name}}</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="fw-500">Bank Address:</li>
+                    <li class="text-muted">{{$value->bank_address}}</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="fw-500">Branch Code:</li>
+                    <li class="text-muted">{{$value->branch_code}}</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="fw-500">Account Name:</li>
+                    <li class="text-muted">{{$value->account_title}}</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="fw-500">Account Number:</li>
+                    <li class="text-muted">{{$value->account_no}}</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="fw-500">Bank Country:</li>
+                    <li class="text-muted">Pakistan</li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="fw-500">Status:</li>
+                    <li class="text-muted">Approved <span class="text-success text-3"><i
+                                class="fas fa-check-circle"></i></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
