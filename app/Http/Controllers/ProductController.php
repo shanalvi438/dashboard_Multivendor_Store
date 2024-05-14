@@ -420,7 +420,7 @@ class ProductController extends Controller
                     'menu_id' => 'required',
                     'category_id' => 'required',
                     'subcategory_id' => 'required',
-                    'brand_name' => 'required|unique:brands',
+                    // 'brand_name' => 'required|unique:brands',
                 ],
                 [
 
@@ -455,7 +455,10 @@ class ProductController extends Controller
                 $productData['url'] = asset('upload/products/' . $imageName);
                 $productData['feature_image'] = $imageName;
             }
-
+            // echo "<pre>";
+            // print_r($productData);
+            // echo "</pre>";
+            // die;
 
             $p = Product::create($productData);
             // $p = Product::create($request->all());
@@ -523,6 +526,11 @@ class ProductController extends Controller
             return redirect()->to('vendor-profile/' . $user_id);
         }
     }
+
+
+
+
+
     public function edit(Request $request, $id)
     {
         $edit = Product::with('shipping_details')

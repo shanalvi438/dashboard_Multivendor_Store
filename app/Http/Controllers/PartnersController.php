@@ -28,12 +28,12 @@ class PartnersController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'brand_name' => 'required',
+            // 'brand_name' => 'required',
             'logo'=>'required|mimes:png,jpg',
             'link'=>'required',
             'type'=>'required'
         ],[
-            'brand_name'=>'The Partner name field is required'
+            // 'brand_name'=>'The Partner name field is required'
         ]);
 
         $b = Brand::create($request->all());
@@ -68,12 +68,12 @@ class PartnersController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'brand_name' => 'required',
+            // 'brand_name' => 'required',
             'logo'=>'mimes:png,jpg',
             'link'=>'required',
             'type'=>'required'
         ],[
-            'brand_name'=>'The Partner name field is required'
+            // 'brand_name'=>'The Partner name field is required'
         ]);
         $update1 = Brand::findOrFail($id);
         $update = Brand::findOrFail($id);

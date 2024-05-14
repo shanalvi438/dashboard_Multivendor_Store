@@ -39,7 +39,7 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
          $this->validate($request, [
-        'brand_name' => 'required|unique:brands'
+        // 'brand_name' => 'required|unique:brands'
 ]);
 
          $brand = new Brand();

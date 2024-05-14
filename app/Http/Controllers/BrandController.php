@@ -51,7 +51,7 @@ class BrandController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'brand_name' => 'required|unique:brands',
+            // 'brand_name' => 'required|unique:brands',
             'logo' => 'required|mimes:png,jpg',
             'link' => '',
             'type' => ''

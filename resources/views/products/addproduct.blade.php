@@ -826,7 +826,7 @@
                                 <select name="brand_id" class="form-control">
                                     <option value="">Select Brand</option>
                                     @foreach ($brands as $brand)
-                                    <option value="brand_name">{{$brand->brand_name}}</option>
+                                    <option value="<?php echo "{{$brand->id}}"; ?>">{{$brand->name}}</option>
                                     @endforeach
                                 </select>
 
